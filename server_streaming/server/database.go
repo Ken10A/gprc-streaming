@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	pb "practical_grpc/streaming/server/proto"
+	pb "server/proto"
 )
 
 type DatabaseService struct{}
