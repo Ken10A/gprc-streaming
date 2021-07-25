@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net"
-	pb "protobuf/proto"
+	pb "server_streaming/proto"
 
 	"google.golang.org/grpc"
 )

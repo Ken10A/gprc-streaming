@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	pb "protobuf/proto"
+	pb "server_streaming/proto"
 )
 
 type DatabaseService struct{}
