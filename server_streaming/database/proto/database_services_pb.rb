@@ -16,7 +16,7 @@ module Practical
           self.unmarshal_class_method = :decode
           self.service_name = 'practical.grpc.v1.Database'
 
-          rpc :Search, SearchRequest, SearchResponse
+          rpc :Search, SearchRequest, stream(SearchResponse)
         end
 
         Stub = Service.rpc_stub_class

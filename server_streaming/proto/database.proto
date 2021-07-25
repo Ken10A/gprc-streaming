@@ -3,7 +3,7 @@ syntax = "proto3";
 package practical.grpc.v1;
 
 service Database {
-    rpc Search(SearchRequest) returns (SearchResponse);
+    rpc Search(SearchRequest) returns (stream SearchResponse);
 }
 
 message SearchRequest {
