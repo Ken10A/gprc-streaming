@@ -18,8 +18,9 @@ func (as *ArchiverService) Zip(stream pb.Archiver_ZipServer) error {
 
 	for {
 		req, err := stream.Recv()
-		err = zf.Close()
+
 		if err == io.EOF {
+			err = zf.Close()
 			if err != nil {
 				log.Print("Error creating the zip file: %v", err)
 				return err
