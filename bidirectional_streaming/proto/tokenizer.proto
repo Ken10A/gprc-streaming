@@ -3,7 +3,7 @@ syntax = "proto3";
 package practical.grpc.v1;
 
 service Tokenizer {
-    rpc Tokenize(stream TokenizeRequest) returns (stream TokenizeResponse;    
+    rpc Tokenize(stream TokenizeRequest) returns (stream TokenizeResponse);    
 }
 
 message TokenizeRequest {
